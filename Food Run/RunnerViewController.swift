@@ -38,7 +38,15 @@ class RunnerViewController: UIViewController {
         driverButton.layer.cornerRadius = 20
         lazyButton.layer.cornerRadius = 20
     }
-
+    
+    @IBAction func onDriver(_ sender: Any) {
+        self.performSegue(withIdentifier: "driverSegue", sender: self)
+    }
+    
+    @IBAction func onLazy(_ sender: Any) {
+        self.performSegue(withIdentifier: "lazySegue", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
