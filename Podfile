@@ -7,6 +7,8 @@ target 'Food Run' do
 
   # Pods for Food Run
   pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Email'
 
   target 'Food RunTests' do
     inherit! :search_paths
