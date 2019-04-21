@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
         // Show it
         present(authViewController, animated: true, completion: nil)
     }
+    
 }
     extension UIViewController: FUIAuthDelegate {
         
