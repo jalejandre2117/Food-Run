@@ -20,23 +20,36 @@ class LazyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
 
         // Do any additional setup after loading the view.
     }
     
+    func assignbackground(){
+        let background = UIImage(named: "bananas")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
     
      
     
     
     
-    func setInformation() {
-        let ref = Database.database().reference()
-        ref.child("-LczTZu8AaEMgi59SWqH").observeSingleEvent(of: .value)
-        { (snapshot) in
-            let driverInfo = snapshot.value as? [String:Any]
-            
-        }
-    }
+//    func setInformation() {
+//        let ref = Database.database().reference()
+//        ref.child("-LczTZu8AaEMgi59SWqH").observeSingleEvent(of: .value)
+//        { (snapshot) in
+//            let driverInfo = snapshot.value as? [String:Any]
+//
+//        }
+//    }
     
 
     /*

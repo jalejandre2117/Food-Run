@@ -20,7 +20,7 @@ class RunnerViewController: UIViewController {
     }
     
     func assignbackground(){
-        let background = UIImage(named: "background")
+        let background = UIImage(named: "bananas")
         
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)

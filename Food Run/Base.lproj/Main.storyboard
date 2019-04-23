@@ -78,7 +78,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95293229818344116" green="0.95293515920639038" blue="0.95294147729873657" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="IJD-2x-oh6"/>
                     </view>
                     <connections>
